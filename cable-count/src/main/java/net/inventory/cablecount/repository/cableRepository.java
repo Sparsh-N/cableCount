@@ -3,24 +3,19 @@ package net.inventory.cablecount.repository;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
-import com.mercedesbenz.cocdashboard.db.model.projectModel;
-
 import net.inventory.cablecount.model.cable;
 import java.util.List;
+import java.util.UUID;
 
 @Repository
-public interface cableRepository extends MongoRepository<cable, String> {
+public interface CableRepository extends MongoRepository<cable, String> {
 	
 	List<cable> findAll();
 	
-	List<cable> findByFirstSide();
+	List<cable> findByFirstSide(String side);
 	
-	List<cable> findBySecondSide();
+	List<cable> findBySecondSide(String side);
 	
-	List<cable> findByCableLength();
-	
-	List<cable> findByCableType();
-	
-	cable findByCableId();
+	cable findByCableId(UUID id);
 	
 }
