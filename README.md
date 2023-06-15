@@ -5,3 +5,10 @@ This is a project I'm making to improve my understanding of Java, SpringBoot, Re
 Despite being a somewhat small project, I'm excited to learn more about these technologies and frameworks, applying it to a problem I've noticed keeps popping up here and there. I intend to begin with creating a locally hosted webapp, and hope to dockerize and make this application accessible for everyone.
 
 npm packages used (so far): material ui, react-sidebar
+
+react frontend instructions - installing packages/node modules:
+1) clone this repository
+2) open the front-end page in ide
+3) run "npm -i" in terminal
+4) ng serve
+5) done!
