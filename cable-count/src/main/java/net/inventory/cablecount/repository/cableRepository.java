@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.UUID;
 
 @Repository
-public interface CableRepository extends MongoRepository<cable, String> {
+public interface cableRepository extends MongoRepository<cable, String> {
 	
 	List<cable> findAll();
 	

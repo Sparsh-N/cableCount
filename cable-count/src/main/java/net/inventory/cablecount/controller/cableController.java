@@ -15,13 +15,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import net.inventory.cablecount.model.cable;
-import net.inventory.cablecount.service.CableService;
+import net.inventory.cablecount.service.cableService;
 
 @RestController
-public class CableController {
+public class cableController {
 	
 	@Autowired
-	public CableService cableServ;
+	public cableService cableServ;
 	
 	@GetMapping("/cables")
 	public ResponseEntity<?> getAllCables() {

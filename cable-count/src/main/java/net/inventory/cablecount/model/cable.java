@@ -19,18 +19,25 @@ public class cable {
 	
 	@Id
 	private final UUID cableId = UUID.randomUUID();
-	
-	private String firstSide;
-	private String secondSide;
-	private double cableLength;
-//	private category cableType;
 
-	public cable() {}
-	
-	public cable(String firstSide, String secondSide, double cableLength) {
-		super();
-		this.firstSide = firstSide;
-		this.secondSide = secondSide;
-		this.cableLength= cableLength;
+	private enum Port {
+		HDMI, Lightning, DP, VGA,
+		Laptop_Mac, Laptop_HP, Laptop_Power_Cable,
+		USBA, USBC;
+	}
+
+	private enum Category {
+		Display, Laptop, Mobile;
+	}
+
+	private Port firstSide;
+	private Port secondSide;
+	private double cableLength;
+	private Category cableType;
+
+	public cable(Port first, Port second, double cableLength) {
+		this.firstSide = first;
+		this.secondSide = second;
+		this.cableLength = cableLength;
 	}
 }
