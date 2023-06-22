@@ -9,7 +9,7 @@ export const Header = () => {
       <AppBar>
           <Toolbar>
             <img src="src/Images/header_image.svg" class="filter-white" height={40} width={40} />
-            <Typography marginLeft={1} color="white" variant="h6" fontSize={26} textAlign={'center'} component="div">
+            <Typography marginLeft={1} color="white" variant="h6" fontSize={26} component="div">
               Cable Count
             </Typography>
           </Toolbar>
