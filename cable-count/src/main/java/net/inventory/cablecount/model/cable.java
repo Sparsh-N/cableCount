@@ -1,7 +1,5 @@
 package net.inventory.cablecount.model;
 
-import java.util.UUID;
-
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -16,28 +14,16 @@ import lombok.Setter;
 @NoArgsConstructor
 @Document(collection="cables")
 public class cable {
-	
+
+	// public enum Port {
+
+	// }
+
 	@Id
-	private final UUID cableId = UUID.randomUUID();
+	private Long id;
 
-	private enum Port {
-		HDMI, Lightning, DP, VGA,
-		Laptop_Mac, Laptop_HP, Laptop_Power_Cable,
-		USBA, USBC;
-	}
-
-	private enum Category {
-		Display, Laptop, Mobile;
-	}
-
-	private Port firstSide;
-	private Port secondSide;
+	private String firstSide;
+	private String secondSide;
 	private double cableLength;
-	private Category cableType;
 
-	public cable(Port first, Port second, double cableLength) {
-		this.firstSide = first;
-		this.secondSide = second;
-		this.cableLength = cableLength;
-	}
 }

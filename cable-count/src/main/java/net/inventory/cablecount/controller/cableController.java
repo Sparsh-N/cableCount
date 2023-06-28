@@ -2,11 +2,13 @@ package net.inventory.cablecount.controller;
 
 import java.util.List;
 
+import org.apache.catalina.connector.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,13 +17,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import net.inventory.cablecount.model.cable;
-import net.inventory.cablecount.service.cableService;
+import net.inventory.cablecount.service.CableService;
 
 @RestController
-public class cableController {
+public class CableController {
 	
 	@Autowired
-	public cableService cableServ;
+	public CableService cableServ;
 	
 	@GetMapping("/cables")
 	public ResponseEntity<?> getAllCables() {
@@ -50,14 +52,25 @@ public class cableController {
 		}
 	}
 	
-	@PostMapping("/cables")
+	@PostMapping("/cables/save")
 	public ResponseEntity<?> addCable(@RequestBody cable newCable) {
+		System.out.println("deepak");
 		try {
 			cableServ.setCable(newCable);
-			return new ResponseEntity<>("Cable added successfully", HttpStatus.CREATED);
+			return new ResponseEntity<String>("Cable added successfully", HttpStatus.CREATED);
 		}
 		catch (Exception e) {
-			return new ResponseEntity<>("Cable not added" + e.getCause() , HttpStatus.INTERNAL_SERVER_ERROR);
+			return new ResponseEntity<String>("Cable not added, " + e.getCause() , HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+	}
+
+	@DeleteMapping("/cables/{cable}")
+	public ResponseEntity<?> deleteCable(@RequestBody cable toDelete) {
+		try {
+			cableServ.removeCable(toDelete);
+			return new ResponseEntity<CableService>(cableServ, HttpStatus.OK);
+		} catch (Exception e) {
+			return new ResponseEntity<String>("Cable could not be deleted.", HttpStatus.NOT_FOUND);
 		}
 	}
 
