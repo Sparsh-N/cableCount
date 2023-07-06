@@ -20,7 +20,7 @@ public class cable {
 	// }
 
 	@Id
-	private Long id;
+	private Long cableId;
 
 	private String firstSide;
 	private String secondSide;
