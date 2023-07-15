@@ -6,6 +6,14 @@ One of the main features I hope to create with this app is to export the data as
 
 Despite being a somewhat small project, I'm excited to learn more about these technologies and frameworks, applying it to a problem I've noticed keeps popping up here and there. I intend to begin with creating a locally hosted webapp, and hope to dockerize and make this application accessible for everyone.
 
+Current progress and todo:
+- [x] Complete backend methods / Test methods with Postman
+- [x] Implement headers, footer, and navbar for frontend
+- [ ] Complete frontend application / UI
+- [ ] Connect Backend with Frontend
+- [ ] Dockerize (and Test!) Application
+- [ ] Host on AWS
+
 npm packages used (so far): material ui, react-sidebar, antd (antdesign)
 
 react frontend instructions - installing packages/node modules:
