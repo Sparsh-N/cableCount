@@ -3,6 +3,8 @@ import './App.css';
 import 'antd/dist/reset.css';
 import { Menu } from 'antd';
 import Header from './PageElements/Header';
+import { SearchBarForm } from './PageElements/SearchPage/SearchBar'
+import Button from '@mui/material/Button';
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
       {label:"Add"},
       {label:"Search"}]}>
     </Menu>
-    <div>Content</div>
+    <div>Content
+    </div>
+    <SearchBarForm />
   </div>
   </>
   );
