@@ -9,9 +9,9 @@ Despite being a somewhat small project, I'm excited to learn more about these te
 Current progress and todo:
 - [x] Complete backend methods / Test methods with Postman
 - [x] Implement headers, footer, and navbar for frontend
-- [ ] Complete frontend application / UI
-- [ ] Connect Backend with Frontend
-- [ ] Run XRadar on application Backend (for Quality Analysis)
+- [x] Complete frontend application / UI
+- [x] Connect Backend with Frontend
+- [ ] Run XRadar or JDepend on application Backend (for Quality Analysis)
 - [ ] Dockerize (and Test!) Application
 - [ ] Host on AWS
 
