@@ -11,7 +11,7 @@ Current progress and todo:
 - [x] Implement headers, footer, and navbar for frontend
 - [x] Complete frontend application / UI
 - [x] Connect Backend with Frontend
-- [ ] Run XRadar or JDepend on application Backend (for Quality Analysis)
+- [x] Run XRadar or JDepend on application Backend (for Quality Analysis)
 - [ ] Dockerize (and Test!) Application
 - [ ] Host on AWS
 
