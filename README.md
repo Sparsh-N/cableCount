@@ -12,8 +12,8 @@ Current progress and todo:
 - [x] Complete frontend application / UI
 - [x] Connect Backend with Frontend
 - [x] Run XRadar or JDepend on application Backend (for Quality Analysis)
-- [ ] Dockerize (and Test!) Application
-- [ ] Host on AWS
+- [X] Dockerize (and Test!) Application
+- [X] Host on AWS
 
 npm packages used (so far): material ui (v5), react-sidebar, antd (antdesign)
 
