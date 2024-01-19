@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Menu } from "antd";
-import "../CssStyles/SidebarStyle.css";
+// import "../CssStyles/SidebarStyle.css";
 
 
 const Sidebar = () => {

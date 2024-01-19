@@ -9,17 +9,16 @@ Despite being a somewhat small project, I'm excited to learn more about these te
 Current progress and todo:
 - [x] Complete backend methods / Test methods with Postman
 - [x] Implement headers, footer, and navbar for frontend
-- [x] Complete frontend application / UI
-- [x] Connect Backend with Frontend
-- [x] Run XRadar or JDepend on application Backend (for Quality Analysis)
-- [X] Dockerize (and Test!) Application
-- [X] Host on AWS
+- [x] Complete frontend application / UI, Connect Backend with Frontend
+- [X] Create dockerfile
+- [X] Host project
 
 npm packages used (so far): material ui (v5), react-sidebar, antd (antdesign)
 
+before running frontend, backend can be run from the CableCountApplication.java file.
 react frontend instructions - installing packages/node modules:
 1) clone this repository
-2) open the front-end page in ide
-3) run "npm -i" in terminal
-4) ng serve
+2) open the front-end page in ide - be sure you're in the my-react-app folder
+3) run "npm install" in terminal
+4) run npm start, and click on localhost:3000
 5) done!

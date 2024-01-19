@@ -15,15 +15,16 @@ import lombok.Setter;
 @Document(collection="cables")
 public class cable {
 
-	// public enum Port {
-
-	// }
-
 	@Id
 	private Long cableId;
 
 	private String firstSide;
 	private String secondSide;
 	private double cableLength;
+
+	public cable(String firstSide, String secondSide) {
+		this.firstSide = firstSide;
+		this.secondSide = secondSide;
+	}
 
 }

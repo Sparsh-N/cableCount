@@ -2,7 +2,7 @@ import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import '../CssStyles/HeaderStyle.css';
+// import '../CssStyles/HeaderStyle.css';
 
 const Header = () => {
     return (

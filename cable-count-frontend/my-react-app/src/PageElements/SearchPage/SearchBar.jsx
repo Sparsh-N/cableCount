@@ -33,8 +33,6 @@ const SearchBarForm = () => {
     )
 }
 
-
-
 export { SearchFunction };
 
 export default SearchBarForm
