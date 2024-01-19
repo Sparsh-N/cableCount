@@ -6,6 +6,13 @@ One of the main features I hope to create with this app is to export the data as
 
 Despite being a somewhat small project, I'm excited to learn more about these technologies and frameworks, applying it to a problem I've noticed keeps popping up here and there. I intend to begin with creating a locally hosted webapp, and hope to dockerize and make this application accessible for everyone.
 
+# Webapp Screenshot
+
+![CABLE_COUNT](https://github.com/Sparsh-N/cableCount/assets/107741753/a395f038-f906-43bd-b74d-daced653fe63)
+CSV File Download Output
+
+![EXCEL_EXPORT](https://github.com/Sparsh-N/cableCount/assets/107741753/2b3fc141-db09-4b09-8b13-846744036c21)
+
 Current progress and todo:
 - [x] Complete backend methods / Test methods with Postman
 - [x] Implement headers, footer, and navbar for frontend
